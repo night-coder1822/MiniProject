@@ -3,9 +3,9 @@ from time import sleep
 #Disable warnings (optional)
 GPIO.setwarnings(False)
 #Select GPIO mode
-GPIO.setmode(GPIO.BCM)
-#Set buzzer - pin 23 as output
-buzzer=23
+GPIO.setmode(GPIO.BOARD)
+#Set buzzer - pin 16 as output on board pin diagram
+buzzer=16
 GPIO.setup(buzzer,GPIO.OUT)
 #Run forever loop
 try:
